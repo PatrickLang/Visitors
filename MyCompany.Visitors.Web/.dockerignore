@@ -1,3 +1,6 @@
-*
-!obj\Docker\publish\*
-!obj\Docker\empty\
+# Is this broken on Windows?
+#*
+#!./obj/Docker/publish/*
+#!./obj/Docker/empty/
+#!./bin/release/publish/*
+#!./bin/debug/publish/*
