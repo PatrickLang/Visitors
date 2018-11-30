@@ -1,7 +1,6 @@
-FROM microsoft/aspnet:4.6.2
-ARG source
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019
 WORKDIR /inetpub/wwwroot
-COPY ${source:-obj/Docker/publish} .
+COPY bin/release/publish .
 EXPOSE 80
 
 
